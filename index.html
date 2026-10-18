@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interactive Periodic Table</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Interactive Periodic Table</h1>
+  <p class="intro">Click an element to see its properties and animation.</p>
+
+  <input id="search" type="text" placeholder="Search name, symbol or atomic number">
+
+  <div class="key">
+    <span><i class="metal"></i> Metal</span>
+    <span><i class="nonmetal"></i> Non-metal</span>
+    <span><i class="noble"></i> Noble gas</span>
+    <span><i class="other"></i> Other</span>
+  </div>
+
+  <div class="table-wrap"><div id="table" class="table"></div></div>
+  <p class="note">Lanthanides and actinides are shown in separate rows below the main table.</p>
+  <div id="extra"></div>
+
+  <section id="info" class="info">
+    <div id="animation" class="animation"><div id="bigSymbol">?</div><div id="particles"></div></div>
+    <div class="details">
+      <p id="category">ELEMENT DETAILS</p>
+      <h2 id="name">Choose an element</h2>
+      <p id="description">Click any box in the table to learn about that element.</p>
+      <div class="facts">
+        <p><b>Symbol:</b> <span id="symbol">—</span></p>
+        <p><b>Atomic number:</b> <span id="number">—</span></p>
+        <p><b>Atomic mass:</b> <span id="mass">—</span></p>
+        <p><b>Group:</b> <span id="group">—</span></p>
+        <p><b>Period:</b> <span id="period">—</span></p>
+        <p><b>State:</b> <span id="state">—</span></p>
+        <p><b>Electron shells:</b> <span id="shells">—</span></p>
+      </div>
+      <div class="fact"><b>Did you know?</b><p id="funFact">A fun fact will appear here.</p></div>
+    </div>
+  </section>
+  <p class="safety">The animations are only visual effects. Do not try chemical reactions at home.</p>
+  <script src="script.js"></script>
+</body>
+</html>
